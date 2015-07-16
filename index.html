@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- jQuery, jQuery.ui -->
+    <link href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="http://getbootstrap.com/dist/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <!-- React -->
+    <script src="https://fb.me/react-0.13.3.js"></script>
+
+    <!--Custom Styles -->
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <title>React Exchange</title>
+</head>
+
+<body role="document">
+
+<!-- Fixed navbar -->
+<div id="forex-rates-header"></div>
+
+<div class="container theme-showcase" role="main">
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+        <h1>Rate component example</h1>
+        <p>The ForexRates component is composed of six Rate components. Each Rate component is configured when implemented in the ForexRates component.</p>
+    </div>
+
+    <div id="forex-rates-ticker"></div>
+
+</div>
+
+<script src="app/dist/components/Rate.js"></script>
+<script src="app/dist/ForexNavbar.js"></script>
+<script src="app/dist/ForexRates.js"></script>
+
+</body>
+</html>
