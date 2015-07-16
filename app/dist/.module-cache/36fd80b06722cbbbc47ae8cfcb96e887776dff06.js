@@ -1,8 +1,5 @@
 
-var Rate = React.createClass({
-    componentWillMount: function() {
-        this.getForex();
-    },
+var Rate = React.createClass({displayName: "Rate",
     getInitialState: function() {
         return {data:"...",YahooForex:"..."};
     },
@@ -20,7 +17,7 @@ var Rate = React.createClass({
     },
     render: function() {
         return(
-            <a href="#">{this.props.Currency} <span className="badge">{this.state.data}</span></a>
+            React.createElement("a", {href: "#"}, this.props.Currency, " ", React.createElement("span", {className: "badge"}, this.state.data))
         );
     }
 });
