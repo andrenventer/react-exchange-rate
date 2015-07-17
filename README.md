@@ -1,4 +1,10 @@
 # react-exchange-rate
+---
 A POC using ReactJS to query and display Forex Exchange Rates
 
-![Alt text](Screenshot.png?raw=true "Screenshot")
+## Example
+---
+
+![Alt text](allFresh.png?raw=true "allFresh")
+
+![Alt text](oneFresh.png?raw=true "oneFresh")
