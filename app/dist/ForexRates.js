@@ -8,7 +8,8 @@ var ForexRates = React.createClass({displayName: "ForexRates",
                 React.createElement("button", {type: "button", className: "btn btn-info"}, React.createElement(Rate, {Currency: "EUR"})), 
                 React.createElement("button", {type: "button", className: "btn btn-info"}, React.createElement(Rate, {Currency: "GBP"})), 
                 React.createElement("button", {type: "button", className: "btn btn-info"}, React.createElement(Rate, {Currency: "NZD"})), 
-                React.createElement("button", {type: "button", className: "btn btn-info"}, React.createElement(Rate, {Currency: "USD"}))
+                React.createElement("button", {type: "button", className: "btn btn-info"}, React.createElement(Rate, {Currency: "USD"})), 
+                React.createElement("button", {className: "btn btn-success", onClick: this.props.onClick}, "Refresh")
             )
         );
     }

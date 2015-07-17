@@ -6,6 +6,9 @@ var Rate = React.createClass({displayName: "Rate",
     getInitialState: function() {
         return {data:"...",YahooForex:"..."};
     },
+    refresh: function() {
+        this.getForex();
+    },
     getForex: function() {
         var urlYahooForex = 'https://query.yahooapis.com/v1/public/yql?q=select * from yahoo.finance.xchange where pair in ("####ZAR")&env=store://datatables.org/alltableswithkeys&format=json';
         urlYahooForex = urlYahooForex.replace(/####/,this.props.Currency);
@@ -20,7 +23,7 @@ var Rate = React.createClass({displayName: "Rate",
     },
     render: function() {
         return(
-            React.createElement("a", {href: "#"}, this.props.Currency, " ", React.createElement("span", {className: "badge"}, this.state.data))
+            React.createElement("a", {onClick: this.refresh}, this.props.Currency, " ", React.createElement("span", {className: "badge"}, this.state.data))
         );
     }
 });

@@ -9,6 +9,7 @@ var ForexRates = React.createClass({
                 <button type="button" className="btn btn-info"><Rate Currency="GBP" /></button>
                 <button type="button" className="btn btn-info"><Rate Currency="NZD" /></button>
                 <button type="button" className="btn btn-info"><Rate Currency="USD" /></button>
+                <button className="btn btn-success" onClick={this.props.onClick} >Refresh</button>
             </div>
         );
     }
