@@ -22,7 +22,6 @@ var ForexNavbar = React.createClass({
                             <li><Rate Currency="GBP" /></li>
                             <li><Rate Currency="NZD" /></li>
                             <li><Rate Currency="USD" /></li>
-                            <li><a href="#">Refresh</a></li>
                         </ul>
                     </div>
                 </div>

@@ -21,8 +21,7 @@ var ForexNavbar = React.createClass({displayName: "ForexNavbar",
                             React.createElement("li", null, React.createElement(Rate, {Currency: "EUR"})), 
                             React.createElement("li", null, React.createElement(Rate, {Currency: "GBP"})), 
                             React.createElement("li", null, React.createElement(Rate, {Currency: "NZD"})), 
-                            React.createElement("li", null, React.createElement(Rate, {Currency: "USD"})), 
-                            React.createElement("li", null, React.createElement("a", {href: "#"}, "Refresh"))
+                            React.createElement("li", null, React.createElement(Rate, {Currency: "USD"}))
                         )
                     )
                 )
